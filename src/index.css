@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes floatHearts {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(40px);
+  }
+}
+
+.animate-floatHearts {
+  animation: floatHearts 8s ease-in-out infinite;
+}
+
+
+@keyframes confetti {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+.animate-confetti {
+  background-image: radial-gradient(circle, pink 2px, transparent 2px);
+  background-size: 30px 30px;
+  animation: confetti 5s linear infinite;
+}
